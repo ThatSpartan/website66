@@ -28,8 +28,9 @@
     transform: translateX(-50%);
     top: 400px;
     border-radius: 30px;
-    background-color: aqua;
+    background-color: #55CDFC;
     overflow: hidden;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
 }
 .line.inner {
     height: 20px;
@@ -37,12 +38,12 @@
     left: 0;
     transform: none;
     top: 0;
-    background-color: blueviolet;
+    background-color: #F7A8B8;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
 }
 #percent {
     transform: translateX(-100);
-    transition-duration: 700ms;
-    transition-timing-function: ease-in-out;
+    transition: transform 700ms cubic-bezier(.41,-0.04,.47,1.05);
 }
 
 #navigation {
@@ -59,4 +60,5 @@
     background-color: bisque;
     margin-left: 20px;
     border-radius: 7px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
 }
